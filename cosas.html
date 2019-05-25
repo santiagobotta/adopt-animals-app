@@ -24,24 +24,44 @@
       }
       .product-card {
         margin: 15px 15px 0px 0px;
-        background-color: white;
+        width: 150px;
         padding: 10px;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        transition: width 0.2s, box-shadow 1s;
+      }
+      .product-card:hover {
+        width: 160px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        filter: blur(1);
+      }
+      .popup {
+        background: url(https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg);
+        position: fixed;
+        top: 35%;
+        left: 40%;
+        height: 30%;
+        width: 20%;
       }
 
     </style>
   </head>
 
   <body>
+
+    <div class=popup>
+      
+    </div>
+
     <div class=page-container>
 
       <div class="container">
         <div class="row">
           <div class="col col-3">
             <div class="sidebar">
-              
+
             </div>
           </div>
+
           <div class="col col-9">
             <div class="catalogo-cont">
               <div class="container">
