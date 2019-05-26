@@ -54,80 +54,159 @@
     </div>
 
     <!-- CATALOG -->
+    
     <div class="catalog">
-
-          <div class="animal-card">
-            <img src="assets/img/charles-dog.jpg" class=profile-pic>
-            <div class="animal-header">
-              <span>Nombre</span>
-              <span class="animal-gender"><i class="fas fa-mars"></i></span>
-            </div>
-            <div class="animal-details">2 años · Pocitos</div>
-            <div class="animal-tags-container"><span class="animal-tag">cachorro</span></div>
-          </div>
-
-          <div class="animal-card">
-            <img src="assets/img/charles-dog.jpg" class=profile-pic>
-            <div class="animal-header">
-              <span>Nombre</span>
-              <span class="animal-gender"><i class="fas fa-mars"></i></span>
-            </div>
-            <div class="animal-details">2 años · Pocitos</div>
-          </div>
+      
+      <div class="catalog-title">
+        <h1>Encotrá a tu próximo mejor amigo.</h1>
         
-          <div class="animal-card">
-            <img src="assets/img/charles-dog.jpg" class=profile-pic>
-            <div class="animal-header">
-              <span>Nombre</span>
-              <span class="animal-gender"><i class="fas fa-mars"></i></span>
-            </div>
-            <div class="animal-details">2 años · Pocitos</div>
+        <p>
+          <a class="btn catalog-controls" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Filtrar por categorías »</a>
+          <button class="btn catalog-controls" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Búsqueda avanzada »</button>
+        </p>
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="animal-tags-container">
+            <div class="animal-tag">Perros</div>
+            <div class="animal-tag">Gatos</div>
+            <div class="animal-tag">Tortugas</div>
+            <div class="animal-tag">Cerdos</div>
+            <div class="animal-tag">Ñandúes</div>
+            <div class="animal-tag">Ver todas las categorías ···</div>  
           </div>
+        </div>
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <form class="form-inline">
+            
+            <select class="form-control">
+              <option selected disabled>Categoría</option>
+              <option value="perros">Perros</option>
+              <option value="gatos">Gatos</option>
+              <option value="tortugas">Tortugas</option>
+              <option value="cerdos">Cerdos</option>
+              <option value="nandues">Ñandúes</option>
+              <option value="otros">Otros</option>
+            </select>
 
-          <div class="animal-card">
-            <img src="assets/img/charles-dog.jpg" class=profile-pic>
-            <div class="animal-header">
-              <span>Nombre</span>
-              <span class="animal-gender"><i class="fas fa-mars"></i></span>
-            </div>
-            <div class="animal-details">2 años · Pocitos</div>
-          </div>
+           <div class=separador></div>
 
-          <div class="animal-card">
-            <img src="assets/img/charles-dog.jpg" class=profile-pic>
-            <div class="animal-header">
-              <span>Nombre</span>
-              <span class="animal-gender"><i class="fas fa-mars"></i></span>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="hembra" value="hembra">
+                <label class="form-check-label" for="hembra"><i class="fas fa-venus"></i></label>
             </div>
-            <div class="animal-details">2 años · Pocitos</div>
-          </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="sexo" id="macho" value="macho">
+              <label class="form-check-label" for="macho"><i class="fas fa-mars"></i></label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="todos" value="todos">
+                <label class="form-check-label" for="todos">Todos</label>
+            </div>
 
-          <div class="animal-card">
-            <img src="assets/img/charles-dog.jpg" class=profile-pic>
-            <div class="animal-header">
-              <span>Nombre</span>
-              <span class="animal-gender"><i class="fas fa-mars"></i></span>
-            </div>
-            <div class="animal-details">2 años · Pocitos</div>
-          </div>
+            <div class=separador></div>
 
-          <div class="animal-card">
-            <img src="assets/img/charles-dog.jpg" class=profile-pic>
-            <div class="animal-header">
-              <span>Nombre</span>
-              <span class="animal-gender"><i class="fas fa-mars"></i></span>
-            </div>
-            <div class="animal-details">2 años · Pocitos</div>
-          </div>
+            <select class="form-control">
+              <option selected disabled>Zona</option>
+              <option value="montevideo">Montevideo</option>
+              <option value="maldonado">Maldonado</option>
+              <option value="puntadeleste">Punta del Este</option>
+              <option value="salto">Salto</option>
+              <option value="coloniadelsacramento">Colonia del Sacramento</option>
+              <option value="rivera">Rivera</option>
+              <option value="otros">Otros</option>
+            </select>
 
-          <div class="animal-card">
-            <img src="assets/img/charles-dog.jpg" class=profile-pic>
-            <div class="animal-header">
-              <span>Nombre</span>
-              <span class="animal-gender"><i class="fas fa-mars"></i></span>
-            </div>
-            <div class="animal-details">2 años · Pocitos</div>
-          </div>
+            <div class=separador></div>
+
+            <button type="search" class="btn mb-2"><i class="fas fa-search "></i></button>
+
+          </form>
+
+
+
+
+        </div>
+
+      </div>
+
+       
+
+
+
+
+
+
+      <div class="animal-card">
+        <img src="assets/img/charles-dog.jpg" class=profile-pic>
+        <div class="animal-header">
+          <span>Nombre</span>
+          <span class="animal-gender"><i class="fas fa-mars"></i></span>
+        </div>
+        <div class="animal-details">2 años · Pocitos</div>
+        <div class="animal-tags-container"><span class="animal-tag">cachorro</span></div>
+      </div>
+
+      <div class="animal-card">
+        <img src="assets/img/charles-dog.jpg" class=profile-pic>
+        <div class="animal-header">
+          <span>Nombre</span>
+          <span class="animal-gender"><i class="fas fa-mars"></i></span>
+        </div>
+        <div class="animal-details">2 años · Pocitos</div>
+      </div>
+    
+      <div class="animal-card">
+        <img src="assets/img/charles-dog.jpg" class=profile-pic>
+        <div class="animal-header">
+          <span>Nombre</span>
+          <span class="animal-gender"><i class="fas fa-mars"></i></span>
+        </div>
+        <div class="animal-details">2 años · Pocitos</div>
+      </div>
+
+      <div class="animal-card">
+        <img src="assets/img/charles-dog.jpg" class=profile-pic>
+        <div class="animal-header">
+          <span>Nombre</span>
+          <span class="animal-gender"><i class="fas fa-mars"></i></span>
+        </div>
+        <div class="animal-details">2 años · Pocitos</div>
+      </div>
+
+      <div class="animal-card">
+        <img src="assets/img/charles-dog.jpg" class=profile-pic>
+        <div class="animal-header">
+          <span>Nombre</span>
+          <span class="animal-gender"><i class="fas fa-mars"></i></span>
+        </div>
+        <div class="animal-details">2 años · Pocitos</div>
+      </div>
+
+      <div class="animal-card">
+        <img src="assets/img/charles-dog.jpg" class=profile-pic>
+        <div class="animal-header">
+          <span>Nombre</span>
+          <span class="animal-gender"><i class="fas fa-mars"></i></span>
+        </div>
+        <div class="animal-details">2 años · Pocitos</div>
+      </div>
+
+      <div class="animal-card">
+        <img src="assets/img/charles-dog.jpg" class=profile-pic>
+        <div class="animal-header">
+          <span>Nombre</span>
+          <span class="animal-gender"><i class="fas fa-mars"></i></span>
+        </div>
+        <div class="animal-details">2 años · Pocitos</div>
+      </div>
+
+      <div class="animal-card">
+        <img src="assets/img/charles-dog.jpg" class=profile-pic>
+        <div class="animal-header">
+          <span>Nombre</span>
+          <span class="animal-gender"><i class="fas fa-mars"></i></span>
+        </div>
+        <div class="animal-details">2 años · Pocitos</div>
+      </div>
 
     </div>
 
@@ -154,7 +233,7 @@
           <div class="carousel-item carousel-cont-3">
               <div class=carousel-text-container>
                 <h1>Historias felices.</h1>
-                <p>Leé en el blog las historias de todas <b>las familias que creamos</b> en Brandname.</p>
+                <p>Leé en el blog las historias de todas <b>las familias que creamos en Brandname.</b></p>
                 <img src="assets/img/charles-dog.jpg" class="carousel-historias-img"><img src="assets/img/charles-dog.jpg" class="carousel-historias-img"><img src="assets/img/charles-dog.jpg" class="carousel-historias-img">
               </div>
           </div>
