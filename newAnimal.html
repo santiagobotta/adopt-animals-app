@@ -53,42 +53,136 @@
 
     </div>
 
-    <!-- ANIMAL FILE -->
+    <!-- NEW ANIMAL FORM -->
     
     <div class="main-section">
       
 
       <div class="title">
-        <h5>Conocé a</h2>
-        <h1>Helga Pataki</h1>
-      </div>
-
-      <div class="card animal-card-max">
-        <div><img src="assets/img/helga.jpg" class="profile-pic"></div>
+        <h1>Encontrale un nuevo hogar</h1>
+        <h5>Completá los datos para llegar instantáneamente a miles de personas que están buscando a su próximo mejor amigo.</h5>
       </div>
       
-      <div class="card animal-card animal-card-max">
-        <div class=animal-header>2 años · Pocitos <span class="animal-gender"><i class="fas fa-mars"></i></span></div>
-        <div class="animal-tags-container">
-          <span class="animal-tag">Perro</span><span class="animal-tag">Cachorro</span><span class="animal-tag">Para familias con niños</span>
-        </div>
-        <div class=animal-details>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
-          <ul>
-            <li><b>Color de pelo:</b> negro/marrón oscuro</li>
-            <li><b>Color de ojos:</b> marrón</li>
-            <li><br></li>
-            <li><b>Información de contacto</b></li>
-            <li><b>Nombre:</b> Juan Pérez</li>
-            <li><b>Teléfono:</b> 098 443789</li>
-            <li><b>Email:</b> juan-loves-helga@gmail.com</li>
-          </ul>
-        </div>
-        <button class=btn>Contactar ahora</button>
-      </div>
+      <div class="card animal-card animal-card-max animal-form-card">
+        
+        <form id=newAnimal>
+          <div class="form-group">
+            <label for="animalTipo">Info general</label>
+            <select class="form-control" id="animalTipo">
+              <option selected disabled>Categoría</option>
+              <option>Perro</option>
+              <option>Gato</option>
+              <option>Tortuga</option>
+              <option>Ornitorrinco</option>
+              <option>Delfín</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="contactoNombre" placeholder="Nombre, si tiene">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="animalRaza" placeholder="Raza">
+          </div>
+
+          <br>
+
+          <div class="form-group">
+            <label for="animalEdad">Datos del animal</label>
+            <select class="form-control" id="animalEdad">
+              <option selected disabled>Edad</option>
+              <option value="1menos">Menos de 1 año</option>
+              <option value="1">1 año</option>
+              <option value="2">2 años</option>
+              <option value="3">3 años</option>
+              <option value="4">4 años</option>
+              <option value="5">5 años</option>
+              <option value="6">6 años</option>
+              <option value="7">7 años</option>
+              <option value="8">8 años</option>
+              <option value="9">9 años</option>
+              <option value="10mas">10 años o más</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select class="form-control" id="animalSexo">
+              <option selected disabled>Sexo</option>
+              <option value="hembra">Hembra</option>
+              <option value="macho">Macho</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="animalColorPelo" placeholder="Color de pelo">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="animalColorOjos" placeholder="Color de ojos">
+          </div>
+
+          <br>
+
+          <div class="form-group">
+            <select class="form-control" id="animalZona">
+              <option selected disabled>Zona en la que reside actualmente</option>
+              <option value="aguada">Aguada</option>
+              <option value="atahualpa">Atahualpa</option>
+              <option value="barriosur">Barrio Sur</option>
+              <option value="buceo">Buceo</option>
+              <option value="carrasco">Carrasco</option>
+              <option value="carrasco norte">Carrasco Norte</option>
+              <option value="centro">Centro</option>
+              <option value="ciudad vieja">Ciudad Vieja</option>
+              <option value="cordon">Cordón</option>
+              <option value="lablanqueada">La Blanqueada</option>
+              <option value="malvin">Malvín</option>
+              <option value="malvinnorte">Malvín Norte</option>
+              <option value="palermo">Palermo</option>
+              <option value="parquebatlle">Parque Batlle</option>
+              <option value="parquerodo">Parque Rodó</option>
+              <option value="prado">Prado</option>
+              <option value="pocitos">Pocitos</option>
+              <option value="puntacarretas">Punta Carretas</option>
+              <option value="trescruces">Tres Cruces</option>
+            </select>
+          </div>
+
+          <br>
+
+          <div class="form-group">
+            <label for="contactoNombre">Tus datos</label>
+            <input type="text" class="form-control" id="contactoNombre" placeholder="Nombre de contacto">
+          </div>
+          <div class="form-group">
+            <input type="phone" class="form-control" id="contactoNombre" placeholder="Teléfono de contacto">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="contactoNombre" placeholder="Email de contacto">
+          </div>
+
+
+          <div class="form-group">
+            <textarea class="form-control" id="animalDescripcion" rows="3" placeholder="Descripción del animal"></textarea>
+          </div>
+
+          <br>
+
+          <div class="form-group">
+            <label for="animalFoto">¡Subí una foto!</label>
+            <input type="file" class="form-control-file" id="animalFoto">
+          </div>
+
+          <br>
+
+          <button type="submit" class="btn">Publicar</button>
+        </form>
+    
+
 
       </div>
+
 
       
     </div>

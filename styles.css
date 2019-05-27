@@ -27,6 +27,15 @@ ul {
 * {
     box-sizing: border-box;
 }
+.main-section {
+    margin-bottom: 100px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 
 .form-inline {
     border-radius: 50px;
@@ -131,30 +140,34 @@ ul {
     margin-right: auto;
     width: 90%;
 }
-.main-section {
-    margin-bottom: 100px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
+
 .btn {
     background: none;
     border: 1px solid coral;
 }
 .catalog .form-inline {
-    background-color: coral;
-    color: white;
+    padding: 0 10px;
+    background-color: rgba(255,127,80,0.3);
+    color: black;
+}
+.catalog .form-control {
+    background-color: none;
+    color: black;
+}
+.btn-catalog-search {
+    margin: auto 0 auto 20px;
+    border-radius: 50px;
+    color: coral;
+    border: none;
+    background: white;
 }
 .animal-card {
     min-height: 200px;
     width: 250px;
 }
-.catalog .profile-pic {
+.profile-pic {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 10px 10px 0 0;
 }
 .animal-card .animal-header {
@@ -174,6 +187,7 @@ ul {
     top: 8px;
     left: 8px;
     right: 8px;
+    margin-bottom: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
@@ -197,15 +211,15 @@ ul {
 /* INSTITUCIONAL CAROUSEL */
 
 .carousel-cont-1 {
-    padding: 130px 0;
+    padding: 130px 80px;
     background-color: coral;
 }
 .carousel-cont-2 {
-    padding: 130px 0;
+    padding: 130px 80px;
     background-color: rgb(164, 231, 247);
 }
 .carousel-cont-3 {
-    padding: 130px 50px;
+    padding: 130px 80px;
     background-color: #FFDA29;
 }
 .carousel-text-container {
@@ -232,16 +246,18 @@ ul {
 /* ANIMAL FILE */
 
 .animal-card-max {
-    width: 500px;
-    padding: 15px;
-}
-.animal-pic-card {
-    max-height: 400px;
-    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    max-width: 500px;
+    padding: 30px;
 }
 .animal-card-max .profile-pic {
-    max-height: 400px;
-    border-radius: 10px;
+    margin: -30px;
+    border-radius: 10px 10px 10px 10px;
+    width: 1000px;
+    max-width: 500px;
+    min-width: 0;
+    height: 400px;
 }
 .animal-card-max .animal-tags-container {
     position: relative;
@@ -249,6 +265,35 @@ ul {
 }
 
 
+
+
+/* NEW ANIMAL FORM */
+
+
+.animal-card-max .form-control {
+    border: none;
+    background: rgba(255,127,80,0.3);
+    border-radius: 10px;
+    color: black;
+}
+.animal-form-card {
+    max-width: none;
+    width: 50%;
+    min-width: 300px;
+}
+.animal-card-max .form-control::placeholder {
+    color: black;
+    font-style: oblique;
+}
+.animal-card-max .form-control:hover {
+    background: rgba(255,127,80,0.7);
+}
+.animal-card-max .form-control:focus {
+    background: rgba(255,127,80,0.7);
+}
+.animal-card-max .form-inline {
+    border-radius: 0px;
+}
 
 
 .nada {
